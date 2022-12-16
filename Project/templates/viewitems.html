@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <title>View Items</title>
+  </head>
+  <body>
+    <h1>View Items</h1>
+    <button onclick="window.location.href='/additem'">Add Item</button>
+    <br />
+    <br />
+    {% for item in items %}
+    <div>
+      <b>ItemName:</b>{{item.itemname}} <br />
+      <b>BrandName:</b>{{item.brandname}} <br />
+      <b>Price:</b>{{item.price}} <br />
+      <b>ItemType:</b>{{item.itemtype}} <br />
+      <b>Quantityadded:</b>{{item.quantityAdded}} <br />
+    </div>
+    <br />
+    {%endfor%}
+  </body>
+</html>
